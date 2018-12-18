@@ -7,12 +7,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Component;
 
-import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-@NoArgsConstructor
 @ConditionalOnExpression("${mine.samplekey} == 15")
 public class SingletonBean {
 	@Autowired
